@@ -9,6 +9,7 @@ const Navigation = () => {
             <li className="Category__list-item">
                 <NavLink
                     to="/"
+                    exact
                     className="Category__list-link"
                     activeClassName="Category__list-link_active"
                 >All</NavLink>

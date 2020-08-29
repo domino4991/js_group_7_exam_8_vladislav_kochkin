@@ -1,0 +1,24 @@
+.Category__list {
+    list-style: none;
+    padding: 0;
+}
+
+.Category__list-item {
+    margin-bottom: 10px;
+}
+
+.Category__list-link {
+    text-decoration: none;
+    color: #263238;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.Category__list-link:hover {
+    color: #00bcd4;
+}
+
+.Category__list-link_active {
+    color: #00bcd4;
+}

@@ -24,6 +24,11 @@
     color: #e0f2f1;
     text-decoration: none;
     font-size: 18px;
+    transition: 0.5s;
+}
+
+.Header__nav-link:hover {
+    color: #00bcd4;
 }
 
 .Header__nav-link_active {
