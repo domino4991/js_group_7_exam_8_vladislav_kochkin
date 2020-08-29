@@ -11,3 +11,21 @@
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.Button {
+  font-size: 12px;
+  padding: 10px 15px;
+  background: #00796b;
+  border-radius: 10px;
+  color: #e0f2f1;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background: #00acc1;
+}
