@@ -8,6 +8,7 @@ const Quotes = props => {
             {props.quotes.map(item => <Quote
                     key={item.id}
                     author={item.author}
+                    id={item.id}
                     quote={item.quote}
                     category={item.category}
                 />

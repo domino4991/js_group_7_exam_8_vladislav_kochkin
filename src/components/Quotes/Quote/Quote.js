@@ -13,7 +13,7 @@ const Quote = props => {
             </div>
             <footer className="Quote-item__footer">
                 <NavLink
-                    to={`/quotes/${props.category}/edit`}
+                    to={`/quotes/${props.id}/edit`}
                     className="Quote-item__edit-btn"
                 >
                     Edit
