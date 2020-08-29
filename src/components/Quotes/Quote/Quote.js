@@ -6,7 +6,7 @@ const Quote = props => {
     return (
         <article className="Quote-item">
             <header className="Quote-item__header">
-                <h5 className="Quote-item__title">{props.author}</h5>
+                <h5 className="Quote-item__title">Author: <span>{props.author}</span></h5>
             </header>
             <div className="Quote-item__body">
                 <p className="Quote-item__quote-txt">{props.quote}</p>
@@ -14,7 +14,7 @@ const Quote = props => {
             <footer className="Quote-item__footer">
                 <NavLink
                     to={`/quotes/${props.id}/edit`}
-                    className="Quote-item__edit-btn"
+                    className="Button"
                 >
                     Edit
                 </NavLink>
