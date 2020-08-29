@@ -1,5 +1,5 @@
 .Quote-item {
-    width: 30%;
+    width: 45%;
     padding: 20px 20px 30px;
     border-left: 5px solid #00796b;
     border-right: 5px solid #00796b;
@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    transform: scale(0);
+    animation: showQuote 1s forwards;
 }
 
 .Quote-item__title {
@@ -48,4 +50,10 @@
 
 .Quote-item__edit-btn:hover {
     background: #00acc1;
+}
+
+@keyframes showQuote {
+    100% {
+        transform: scale(1);
+    }
 }

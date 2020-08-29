@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 const Quote = props => {
     return (
-        <article className="Quote-item">
+        <article className="Quote-item" style={{animationDelay: `${props.delay}s`}}>
             <header className="Quote-item__header">
                 <h5 className="Quote-item__title">Author: <span>{props.author}</span></h5>
             </header>

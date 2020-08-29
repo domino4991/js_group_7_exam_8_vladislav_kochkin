@@ -69,7 +69,7 @@ const EditQuotePage = props => {
                     submit={e => onSubmitChangedQuote(e)}
                     >
                         <Button btnType="submit" label="Edit" />
-                        <Button btnType="button" label="Delete" clicked={deleteQuote} />
+                        <Button btnType="button" label="Delete" btnClass="Form__delete-quote" clicked={deleteQuote} />
                     </Form>
             ) : null}
         </section>

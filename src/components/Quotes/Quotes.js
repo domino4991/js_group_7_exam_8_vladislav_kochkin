@@ -11,8 +11,9 @@ const Quotes = props => {
                     id={item.id}
                     quote={item.quote}
                     category={item.category}
+                    delay={props.delay}
                 />
-            )}
+            ).reverse()}
         </div>
     );
 };
