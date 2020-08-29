@@ -6,6 +6,7 @@ const Quotes = props => {
     return (
         <div className="Quotes">
             {props.quotes.map(item => <Quote
+                    key={item.id}
                     author={item.author}
                     quote={item.quote}
                     category={item.category}

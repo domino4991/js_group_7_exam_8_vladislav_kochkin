@@ -6,8 +6,8 @@ import {NavLink} from "react-router-dom";
 const Navigation = () => {
     return (
         <ul className="Category__list">
-            {CATEGORY_NAMES.map(item => (
-                <li className="Category__list-item">
+            {CATEGORY_NAMES.map((item, i) => (
+                <li key={i} className="Category__list-item">
                     <NavLink
                         to={`/quotes/${item.category}`}
                         className="Category__list-link"
