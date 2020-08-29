@@ -1,7 +1,6 @@
 import React from 'react';
 import './Form.css';
 import {CATEGORY_NAMES} from "../../../constants";
-import Button from "../Button/Button";
 import {NavLink} from "react-router-dom";
 
 const Form = props => {
@@ -41,7 +40,7 @@ const Form = props => {
                 onChange={props.changed}
                 required
             />
-            <Button btnType="submit" label="Add" />
+            {props.children}
             <NavLink to="/quotes/all" className="Form__close">Cancel</NavLink>
         </form>
     );
