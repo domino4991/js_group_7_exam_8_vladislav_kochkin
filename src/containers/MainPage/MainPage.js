@@ -39,11 +39,15 @@ const MainPage = props => {
                     <Navigation />
                 </aside>
                 <section className="Main-page__content">
+                    <h2 className="Title">{Object.keys(props.match.params).length !== 0 ?
+                            props.match.params.category.replace('-', ' ').toUpperCase()
+                        :
+                            'All'}</h2>
                     {quotes.length !== 0 ? (
                         <Quotes
                             quotes={quotes}
                         />
-                    ) : <p>Нет цитат</p>}
+                    ) : <p>Нет цитат. Вы можете добавить новую цитату в эту категорию.</p>}
                 </section>
             </div>
         </main>
