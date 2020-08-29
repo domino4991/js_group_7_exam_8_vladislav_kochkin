@@ -17,6 +17,7 @@ const Header = () => {
                         <li className="Header__nav-item">
                             <NavLink
                                 to="/"
+                                exact
                                 className="Header__nav-link"
                                 activeClassName="Header__nav-link_active"
                             >

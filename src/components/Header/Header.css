@@ -1,5 +1,5 @@
 .Header {
-    background: #004d40;
+    background: #263238;
     padding: 20px;
     color: #e0f2f1;
 }
@@ -18,6 +18,16 @@
 
 .Header__nav-item {
     margin-right: 30px;
+}
+
+.Header__nav-link {
+    color: #e0f2f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.Header__nav-link_active {
+    color: #00bcd4;
 }
 
 .Logo-box {
