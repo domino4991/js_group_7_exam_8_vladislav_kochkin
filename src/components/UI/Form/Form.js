@@ -8,7 +8,7 @@ const Form = props => {
         <form className="Form" onSubmit={props.submit}>
             <label htmlFor="category" className="Form__label">Category</label>
             <select
-                className="Form__category-select"
+                className="Form__category-select Form__field"
                 id="category"
                 name="category"
                 value={props.category}
@@ -30,6 +30,7 @@ const Form = props => {
                 className="Form__field"
                 type="text"
                 required
+                placeholder="Enter author name..."
             />
             <label htmlFor="quote-text" className="Form__label">Quote text</label>
             <textarea
@@ -39,9 +40,12 @@ const Form = props => {
                 name="quote"
                 onChange={props.changed}
                 required
+                placeholder="Enter quote..."
             />
-            {props.children}
-            <NavLink to="/quotes/all" className="Form__close">Cancel</NavLink>
+            <div className="Form__btn-group">
+                {props.children}
+                <NavLink to="/" className="Form__close Button">Cancel</NavLink>
+            </div>
         </form>
     );
 };
