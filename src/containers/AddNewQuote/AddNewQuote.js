@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './AddNewQuote.css';
 import Form from "../../components/UI/Form/Form";
 import axiosQuotes from "../../axiosQuotes";
+import Button from "../../components/UI/Button/Button";
 
 const AddNewQuote = props => {
     const [newQuote, setNewQuote] = useState({
@@ -48,7 +49,10 @@ const AddNewQuote = props => {
                     quote={newQuote.quote}
                     changed={e => onChangeNewQuote(e)}
                     submit={e => onSubmitNewQuote(e)}
-                />
+                    btnLabel="Add"
+                >
+                    <Button btnType="submit" label="Add" />
+                </Form>
             </div>
         </section>
     );
