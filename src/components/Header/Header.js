@@ -16,7 +16,7 @@ const Header = () => {
                     <ul className="Header__nav-list">
                         <li className="Header__nav-item">
                             <NavLink
-                                to="/quotes/all"
+                                to="/"
                                 className="Header__nav-link"
                                 activeClassName="Header__nav-link_active"
                             >

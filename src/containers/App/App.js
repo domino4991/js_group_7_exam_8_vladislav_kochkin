@@ -13,8 +13,8 @@ function App() {
           <Switch>
               <Route path="/" exact component={MainPage} />
               <Route path="/add-quote" component={AddNewQuote} />
-              <Route path="/quotes/all" component={MainPage} />
               <Route path="/quotes/:category" component={MainPage} />
+              <Route render={() => <h1 style={{textAlign: "center"}}>404 not found</h1>} />
           </Switch>
       </BrowserRouter>
     </div>
