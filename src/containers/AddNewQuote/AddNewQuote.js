@@ -6,7 +6,7 @@ import Button from "../../components/UI/Button/Button";
 
 const AddNewQuote = props => {
     const [newQuote, setNewQuote] = useState({
-        category: 'all',
+        category: 'Star Wars',
         author: '',
         quote: ''
     });
@@ -32,7 +32,7 @@ const AddNewQuote = props => {
             await axiosQuotes.post('/quotes.json', postQuote);
         } finally {
             setNewQuote({
-                category: "all",
+                category: '',
                 author: '',
                 quote: ''
             });
