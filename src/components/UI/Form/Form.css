@@ -42,3 +42,7 @@
 .Form__delete-quote {
     background: #d32f2f;
 }
+
+.Form__delete-quote:hover {
+    background: #b71c1c;
+}
